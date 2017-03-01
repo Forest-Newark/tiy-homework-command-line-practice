@@ -16,7 +16,7 @@ public class CommandLineTest {
                 Files.exists(Paths.get("src/main/java/Main.java")), is(true));
     }
 
-    @Test
+   @Test
     // the program should have been run via `gradle run -q`
     public void mainWasRunTest(){
         assertThat("Didn't run 'gradle -run'",
